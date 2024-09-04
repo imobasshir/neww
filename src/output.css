@@ -645,6 +645,11 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 1rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -885,6 +890,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 640px) {
+  .sm\:my-7 {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
   .sm\:size-12 {
     width: 3rem;
     height: 3rem;
@@ -926,6 +936,11 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 2.5rem;
   }
 
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:gap-5 {
     gap: 1.25rem;
   }
@@ -945,5 +960,13 @@ body::-webkit-scrollbar-thumb {
   .lg\:my-12 {
     margin-top: 3rem;
     margin-bottom: 3rem;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }
