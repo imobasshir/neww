@@ -1155,6 +1155,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 768px) {
+  .md\:top-10 {
+    top: 2.5rem;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1168,6 +1172,11 @@ body::-webkit-scrollbar-thumb {
   .md\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .md\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .md\:grid-cols-2 {
@@ -1203,9 +1212,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 1024px) {
+  .lg\:top-14 {
+    top: 3.5rem;
+  }
+
   .lg\:my-14 {
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
+  }
+
+  .lg\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .lg\:flex-row {
@@ -1224,5 +1242,14 @@ body::-webkit-scrollbar-thumb {
 @media (min-width: 1200px) {
   .my\:sticky {
     position: sticky;
+  }
+
+  .my\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .my\:flex-row {
+    flex-direction: row;
   }
 }
