@@ -1,0 +1,8 @@
+.box-proj:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.box-proj:hover h3 {
+    color: #008080;
+}
