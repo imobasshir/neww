@@ -13,20 +13,21 @@
         rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
     <main
         class="max-w-[1200px] my-4 sm:my-7 mx-4 md:mx-8 lg:mx-12 my:mx-auto md:my-10 lg:my-14 flex flex-col my:flex-row justify-center gap-6">
         <section
-            class="static my:sticky top-[60px] md:top-10 lg:top-14 max-h-[max-content] h-full mb-0 pt-[60px] rounded-lg bg-background dark:bg-background-dark p-6 shadow-sm">
-            <div class="flex flex-col gap-6 justify-start items-center">
+            class="main-contact scroll-mt-4 static my:sticky top-[60px] md:top-10 lg:top-14 max-h-[max-content] h-full mb-0 my:pt-[60px] rounded-lg bg-background dark:bg-background-dark p-6 shadow-sm">
+            <div class="flex flex-row my:flex-col gap-6 justify-start items-center">
                 <div class="rounded-3xl border-none p-6 bg-[#e5e5e9]">
                     <img class="rounded-xl"
                         src="https://raw.githubusercontent.com/imobasshir/imobasshir/main/assets/images/62945306-removebg-preview.png"
                         alt="Mobasshir Imam" width="100">
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-start my:items-center">
                     <h1 class="text-xl font-semibold mb-3" title="Mobasshir Imam">Mobasshir Imam</h1>
                     <span class="text-sm font-normal p-1 rounded bg-gray-300 text-gray-900">Web developer</span>
                 </div>
@@ -105,9 +106,9 @@
             </div>
         </section>
         <section
-            class="min-w-[75%] m-0 top-[60px] max-h-[max-content] h-full mb-0 pt-11 rounded-lg bg-background dark:bg-background-dark p-6 shadow-sm">
+            class="min-w-[75%] m-0 mb-14 my:mb-0 top-[60px] max-h-[max-content] h-full pt-11 rounded-lg bg-background dark:bg-background-dark p-6 shadow-sm">
 
-            <article class="about">
+            <article class="about hidden">
                 <header class="mb-6 pb-1 md:pb-2 relative">
                     <h2
                         class="text-2xl md:text-3xl font-semibold after:content-[''] after:absolute after:bottom-[0] after:left-[0] after:w-8 after:md:w-10 after:h-1 after:bg-primary after:rounded-[3px]">
@@ -190,7 +191,7 @@
 
             </article>
 
-            <article class="resume">
+            <article class="resume hidden">
                 <header class="mb-6 pb-1 md:pb-2 relative">
                     <h2
                         class="text-2xl md:text-3xl font-semibold after:content-[''] after:absolute after:bottom-[0] after:left-[0] after:w-8 after:md:w-10 after:h-1 after:bg-primary after:rounded-[3px]">
@@ -264,7 +265,7 @@
                 </div>
             </article>
 
-            <article class="project">
+            <article class="project hidden">
                 <header class="mb-6 pb-1 md:pb-2 relative">
                     <h2
                         class="text-2xl md:text-3xl font-semibold after:content-[''] after:absolute after:bottom-[0] after:left-[0] after:w-8 after:md:w-10 after:h-1 after:bg-primary after:rounded-[3px]">
@@ -343,7 +344,7 @@
                 </div>
             </article>
 
-            <article class="contact">
+            <article class="contact hidden">
                 <header class="mb-6 pb-1 md:pb-2 relative">
                     <h2
                         class="text-2xl md:text-3xl font-semibold after:content-[''] after:absolute after:bottom-[0] after:left-[0] after:w-8 after:md:w-10 after:h-1 after:bg-primary after:rounded-[3px]">
@@ -352,6 +353,14 @@
 
             </article>
 
+            <nav class="nav w-full fixed bottom-0 left-0 bg-[#c1e5ef4d] backdrop-filter backdrop-blur-[10px] rounded-tl-xl xs:rounded-tl-2xl rounded-br-none rounded-tr-xl xs:rounded-tr-2xl rounded-bl-none z-10 shadow-md">
+                <ul class="flex flex-wrap justify-center items-center gap-3 xxs:gap-5 px-2 py-4">
+                    <li class="text-primary font-medium" id="about">About</li>
+                    <li class="text-gray-950" id="resume">Resume</li>
+                    <li class="text-gray-950" id="project">Project</li>
+                    <li class="text-gray-950" id="contact">Contact</li>
+                </ul>
+            </nav>
         </section>
     </main>
 </body>
