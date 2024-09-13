@@ -29,3 +29,13 @@ navList.forEach((item) => {
         });
     });
 });
+
+const bottomContact = document.querySelector('.bottom-contact');
+const btnShow = document.querySelector('.btn-show');
+
+btnShow.addEventListener('click', () => {
+    btnShow.classList.toggle('rotate-180'); 
+    bottomContact.style.transition = 'height 0.5s ease';
+    bottomContact.style.height = bottomContact.clientHeight === 0 ? 'auto' : '0';
+    bottomContact.style.overflow = bottomContact.clientHeight === 0 ? 'hidden' : 'visible';
+});
